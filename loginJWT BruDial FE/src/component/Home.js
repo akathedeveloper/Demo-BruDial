@@ -43,6 +43,10 @@ function Home({ token }) {
         </button>
       )}
 
+      <button className="chats-button" onClick={() => navigate('/home/chat')}>
+        Chats
+      </button>
+
       <button className="logout-button" onClick={handleLogout}>Logout</button>
     </div>
   );
