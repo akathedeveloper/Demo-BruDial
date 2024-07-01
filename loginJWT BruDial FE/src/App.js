@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // import React, { useState, useEffect } from 'react';
 // import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 // import Login from './component/Login';
@@ -54,24 +54,17 @@
 
 // export default App;
 
-=======
->>>>>>> 3f232066c25d45d03a615924c85576d2853129d0
+
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Login from './component/Login';
 import Home from './component/Home';
 import Register from './component/Register';
 import LandingPage from './component/LandingPage';
-<<<<<<< HEAD
 import UpdateProfile from './component/UpdateProfile';
 import ProtectedRoute from './component/ProtectedRoute';
 import ChatPage from './component/ChatPage'; // Adjust the import path as necessary
 
-=======
-import ChatPage from './component/ChatPage'; // Adjust the import path as necessary
-
-
->>>>>>> 3f232066c25d45d03a615924c85576d2853129d0
 const App = () => {
     const [token, setToken] = useState(localStorage.getItem('token') || '');
 
@@ -87,7 +80,6 @@ const App = () => {
                 <Route path="/home" element={token ? <Home token={token} /> : <Navigate to="/login" />} />
                 <Route path="/home/chat" element={token ? <ChatPage /> : <Navigate to="/login" />} />
                 <Route path="/register" element={token ? <Register token={token} /> : <Navigate to="/login" />} />
-<<<<<<< HEAD
                 <Route path="/profile" element={
                     <ProtectedRoute>
                         <UpdateProfile />
@@ -95,10 +87,6 @@ const App = () => {
                 } />
                 <Route path="/" element={<LandingPage />} />
                 <Route path="*" element={<Navigate to="/login" />} />
-=======
-                <Route path="*" element={<Navigate to="/login" />} />
-                <Route path="/" element={<LandingPage />} />
->>>>>>> 3f232066c25d45d03a615924c85576d2853129d0
             </Routes>
         </Router>
     );

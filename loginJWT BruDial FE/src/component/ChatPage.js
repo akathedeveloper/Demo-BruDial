@@ -9,25 +9,16 @@ const ChatPage = () => {
     const [to, setTo] = useState('');
     const [body, setBody] = useState('');
     const [messages, setMessages] = useState([]);
-<<<<<<< HEAD
     const [token, setToken] = useState(localStorage.getItem('token') || '');
 
-=======
-
-    // Define your ngrok API URL
->>>>>>> 3f232066c25d45d03a615924c85576d2853129d0
     const API_URL = 'http://localhost:8080/api/messages';
 
     // Create an Axios instance with custom headers
     const axiosInstance = axios.create({
         baseURL: API_URL,
         headers: {
-<<<<<<< HEAD
             'ngrok-skip-browser-warning': true,
             'Authorization': `Bearer ${token}`
-=======
-            'ngrok-skip-browser-warning': true
->>>>>>> 3f232066c25d45d03a615924c85576d2853129d0
         },
         withCredentials: true
     });
@@ -36,11 +27,7 @@ const ChatPage = () => {
     const sendMessage = async (e) => {
         e.preventDefault();
         try {
-<<<<<<< HEAD
             console.log("Sending To: ", to);
-=======
-            console.log("Sending TO", to);
->>>>>>> 3f232066c25d45d03a615924c85576d2853129d0
             console.log("Body data", body);
             const response = await axiosInstance.post('/send', null, {
                 params: { to, body }

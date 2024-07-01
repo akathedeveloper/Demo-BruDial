@@ -2,11 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../css/Home.css';
-<<<<<<< HEAD
 import TopBar from './TopBar'
-=======
-
->>>>>>> 3f232066c25d45d03a615924c85576d2853129d0
 function Home({ token }) {
   const [userDetails, setUserDetails] = useState(null);
   const navigate = useNavigate();
@@ -34,12 +30,9 @@ function Home({ token }) {
   if (!userDetails) return <div>Loading...</div>;
 
   return (
-<<<<<<< HEAD
     <>
     
       <TopBar userDetails={userDetails}/>
-=======
->>>>>>> 3f232066c25d45d03a615924c85576d2853129d0
     <div className="home-container">
       <h1>Welcome, {userDetails.firstName} {userDetails.lastName}</h1>
       <p>Email: {userDetails.email}</p>
@@ -59,10 +52,7 @@ function Home({ token }) {
 
       <button className="logout-button" onClick={handleLogout}>Logout</button>
     </div>
-<<<<<<< HEAD
     </>
-=======
->>>>>>> 3f232066c25d45d03a615924c85576d2853129d0
   );
 }
 

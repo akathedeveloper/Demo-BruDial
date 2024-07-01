@@ -35,11 +35,7 @@ const Message = ({ message }) => {
   const { body, timeStamp, from } = message;
   const formattedDate = new Date(timeStamp);
 
-<<<<<<< HEAD
-  const isSender = from === "+xxxxxxxxx";
-=======
-  const isSender = from === "+14176654199";
->>>>>>> 3f232066c25d45d03a615924c85576d2853129d0
+  const isSender = from === "";
 
   return (
     <MessageContainer isSender={isSender}>

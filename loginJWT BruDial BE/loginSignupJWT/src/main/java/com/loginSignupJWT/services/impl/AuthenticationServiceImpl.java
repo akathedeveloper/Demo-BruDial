@@ -6,7 +6,9 @@ import com.loginSignupJWT.entities.User;
 import com.loginSignupJWT.repository.UserRepository;
 import com.loginSignupJWT.services.AuthenticationService;
 import com.loginSignupJWT.services.JWTService;
+
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder; // Import PasswordEncoder
