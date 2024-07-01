@@ -1,0 +1,45 @@
+
+.home-container {
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.home-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.home-container p {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.register-toggle, .logout-button, .chats-button {
+  margin: 20px 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-toggle:hover, .logout-button:hover, .chats-button:hover {
+  background-color: #0056b3;
+}
+
+.user-section {
+  margin-top: 40px;
+}
+
+.user-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}

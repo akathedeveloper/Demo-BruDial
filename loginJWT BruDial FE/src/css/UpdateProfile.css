@@ -1,0 +1,50 @@
+.update-profile-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.update-profile-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.update-profile-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.update-profile-container label {
+    margin-bottom: 10px;
+}
+
+.update-profile-container input {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.update-profile-container button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.update-profile-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
