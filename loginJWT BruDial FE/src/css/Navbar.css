@@ -1,0 +1,42 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #dad8d8;
+    color: rgb(197, 194, 194);
+    position: relative; /* Added to use z-index */
+    z-index: 10; /* Higher value to ensure it appears above other elements */
+    margin-top: 60px;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .navbar-logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .navbar-name {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .navbar-login button {
+    padding: 10px 20px;
+    background-color: #ee9b00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .navbar-login button:hover {
+    background-color: #cc8300;
+  }
+  
